@@ -1,0 +1,13 @@
+.modal(data-modal="callback")
+  .modal__close
+  .modal__wrap
+    .modal__overflow
+      .modal__content
+        p.modal__title Оставьте заявку, и наш консультант свяжется с вами
+        form.modal__form
+          input.custom-input(type="text" placeholder="Имя" name="name" required)
+          input.custom-input.validate-field(type="text" placeholder="Телефон" name="phone" data-tel-input required)
+          button(type="submit").primary-btn Отправить
+          .agreement При нажатии кнопки "Отправить" Вы соглашаетесь 
+            a(href="") с политикой конфиденциальности и обработки персональных данных
+

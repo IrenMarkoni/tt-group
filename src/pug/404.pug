@@ -1,0 +1,14 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Ошибка 404';
+
+block content
+
+  include components/inner/404.pug
+
+
+
+
+append styles
+  +style('index.css')

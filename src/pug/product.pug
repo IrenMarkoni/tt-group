@@ -1,0 +1,14 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Механический шлагбаум CARDDEX «MBT», комплект «Стандарт Плюс»';
+
+block content
+
+  include components/inner/product.pug
+
+
+
+
+append styles
+  +style('index.css')

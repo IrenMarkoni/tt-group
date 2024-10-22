@@ -1,0 +1,371 @@
+header.header(id="header")
+  .header__top
+    .container
+      .header__top-content
+        .header__logo
+          .burger 
+          a(href="/").logo 
+            +img("logo.svg", "logo")
+        nav.header__nav 
+          ul 
+            li.header__nav-item.drop
+              a(href="").text-small Услуги
+            li.header__nav-item 
+              a(href="").text-small Компания
+            li.header__nav-item 
+              a(href="").text-small Оборудование
+            li.header__nav-item 
+              a(href="").text-small Документы
+            li.header__nav-item 
+              a(href="").text-small Новости
+            li.header__nav-item 
+              a(href="").text-small Вакансии
+            li.header__nav-item 
+              a(href="").text-small Портфолио
+            li.header__nav-item 
+              a(href="").text-small Контакты
+        .header__contacts
+          a.primary-btn.openmodal(data-modal="message")
+          a.phone-link(href="tel:88001014515") 
+            span 8 800 101 45 15
+  .header__bottom
+    .container
+      .header__bottom-content
+        .header__bottom-left
+          .header__moto
+            p.text-small Автоматика. Безопасность. Инжиниринг
+          form.search
+            button.search__btn(type="submit") 
+              +svg("search")
+            input.search__input.text-small(type="text" placeholder="Искать на сайте...")
+            span
+            span
+            span
+            span
+            .search__close
+        .header__bottom-right 
+          a(href="https://yandex.ru/maps/org/tt_grupp/87968932320/?ll=37.618785%2C54.210139&z=16" target="_blank").address.text-small г. Тула, Демидовская улица, 61Г
+          a(href="mailto: info@t-t.group" target="_blank").email.text-small info@t-t.group
+  .menu
+    .container
+      .menu__wrapper
+        ul.menu__main 
+          li
+            a(href="" id="0").menu__main-link
+              .menu__main-icon
+                +svg("icon1")
+              span Системы видеонаблюдения
+            .menu__drop(data-id="0")
+              .menu__section 
+                p.menu__section-title Проектирование
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование систем видеонаблюдения
+
+              .menu__section
+                p.menu__section-title Монтаж
+                ul.menu__section-list
+                  li
+                    a.menu__section-link(href="" title="") Монтаж систем видеонаблюдения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем аналогового видеонаблюдения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем IP видеонаблюдения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем охранного телевидения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем видеонаблюдения для дома и дачи
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем видеонаблюдения для бизнеса и государства
+
+              .menu__section 
+                p.menu__section-title Обслуживание
+                ul.menu__section-list
+                  li
+                    a.menu__section-link(href="" title="") Обслуживание систем видеонаблюдения
+          li
+            a(href="" id="1").menu__main-link 
+              .menu__main-icon
+                +svg("icon2")
+              span Охранные системы
+            .menu__drop(data-id="1")
+              .menu__section 
+                p.menu__section-title Проектирование
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование систем охранной сигнализации
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование систем охраны периметра
+              .menu__section 
+                p.menu__section-title Монтаж
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем охранной сигнализации для дома и дачи
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем охраны периметра
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем охранной сигнализации для бизнеса и государства
+              .menu__section 
+                p.menu__section-title Обслуживание
+                ul.menu__section-list
+                  li
+                    a.menu__section-link(href="" title="") Обслуживание систем охранной сигнализации
+                  li
+                    a.menu__section-link(href="" title="") Обслуживание систем охраны периметра
+          li
+            a(href="" id="2").menu__main-link 
+              .menu__main-icon
+                +svg("icon3")
+              span Контроль доступа
+            .menu__drop(data-id="2")
+              .menu__section 
+                p.menu__section-title Проектирование
+                ul.menu__section-list
+                  li
+                    a.menu__section-link(href="" title="") Проектирование систем контроля и управления доступом
+                  li
+                    a.menu__section-link(href="" title="") Проектирование домофонии
+                  li
+                    a.menu__section-link(href="" title="") Проектирование систем учета рабочего времени
+              .menu__section 
+                p.menu__section-title Монтаж
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем контроля и управления доступом
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж домофонии
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж турникетов и проходных
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж шлагбаумов и цепных барьеров
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем учета рабочего времени
+              .menu__section 
+                p.menu__section-title Обслуживание
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание систем контроля и управления доступом
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание домофонии
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание турникетов и проходных
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание шлагбаумов и цепных барьеров
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание систем учета рабочего времени
+          li
+            a(href="" id="3").menu__main-link
+              .menu__main-icon
+                +svg("icon4")
+              span Противопожарные системы
+            .menu__drop(data-id="3")
+              .menu__section 
+                p.menu__section-title Проектирование
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование охранно-пожарной сигнализации
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование систем оповещения и управления эвакуацией
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование пожаротушения
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование противопожарного водопровода
+                  li 
+                    a.menu__section-link(href="" title="") Разработка и изготовление планов эвакуации
+                  li 
+                    a.menu__section-link(href="" title="") Расчет категории помещений по взрывопожарной, пожарной опасности
+                  li 
+                    a.menu__section-link(href="" title="") Пожарный аудит
+                  li 
+                    a.menu__section-link(href="" title="") Разработка декларации пожарной безопасности
+              .menu__section 
+                p.menu__section-title Монтаж
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж охранно-пожарной сигнализации
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем оповещения и управления эвакуацией
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж пожаротушения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем водяного пожаротушения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем пенного пожаротушения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем порошкового пожаротушения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж противопожарного водопровода 
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж противопожарного оборудования
+              .menu__section 
+                p.menu__section-title Обслуживание
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание охранно-пожарной сигнализации
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание систем оповещения и управления эвакуацией
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание пожаротушения
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание противопожарного водопровода
+                  li 
+                    a.menu__section-link(href="" title="") Перемотка пожарных рукавов
+          li
+            a(href="" id="5").menu__main-link
+              .menu__main-icon
+                +svg("icon5")
+              span Электромонтажные работы
+            .menu__drop(data-id="4")
+              .menu__section 
+                p.menu__section-title Проектирование
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование систем электроснабжения
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование систем бесперебойного электропитания
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование заземления
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование молниезащиты
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование щитового оборудования
+              .menu__section 
+                p.menu__section-title Монтаж
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем бесперебойного электропитания
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж заземления
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж молниезащиты
+                  li 
+                    a.menu__section-link(href="" title="") Сборка щитового оборудования
+              .menu__section 
+                p.menu__section-title Обслуживание
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание систем бесперебойного электропитания
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание заземления
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание молниезащиты
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание щитового оборудования
+          li
+            a(href="" id="6").menu__main-link 
+              .menu__main-icon
+                +svg("icon6")
+              span Системы освещения
+            .menu__drop(data-id="5")
+              .menu__section 
+                p.menu__section-title Проектирование
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование торгового освещения
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование промышленного освещения
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование спортивного освещения
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование садово-паркового освещения
+              .menu__section 
+                p.menu__section-title Монтаж
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж торгового освещения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж промышленного освещения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж спортивного освещения
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж садово-паркового освещения
+              .menu__section 
+                p.menu__section-title Обслуживание
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание торгового освещения
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание промышленного освещения
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание спортивного освещения
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание садово-паркового освещения
+          li
+            a(href="" id="7").menu__main-link 
+              .menu__main-icon
+                +svg("icon7")
+              span Инженерные сети
+            .menu__drop(data-id="7")
+              .menu__section 
+                p.menu__section-title Проектирование
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование внутреннего водоснабжения и канализации
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование автоматизации и диспетчеризации инженерных систем
+              .menu__section 
+                p.menu__section-title Монтаж
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж внутреннего водоснабжения и канализации
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж автоматизации и диспетчеризации инженерных систем
+              .menu__section 
+                p.menu__section-title Обслуживание
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание внутреннего водоснабжения и канализации
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание автоматизации и диспетчеризации инженерных систем
+          li
+            a(href="" id="8").menu__main-link 
+              .menu__main-icon
+                +svg("icon8")
+              span Кабельная инфраструктура
+            .menu__drop(data-id="8")
+              .menu__section 
+                p.menu__section-title Проектирование
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование локально вычислительных сетей (ЛВС)
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование волоконно-оптических линий связи (ВОЛС)
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование беспроводных сетей Wi-Fi
+                  li 
+                    a.menu__section-link(href="" title="") Проектирование систем телефонной связи
+              .menu__section 
+                p.menu__section-title Монтаж
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж локально вычислительных сетей (ЛВС)
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж волоконно-оптических линий связи (ВОЛС)
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж беспроводных сетей Wi-Fi
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем телефонной связи
+                  li 
+                    a.menu__section-link(href="" title="") Монтаж систем усиления сигнала сотовой связи и интернета
+                  li 
+                    a.menu__section-link(href="" title="") Алмазное бурение (сверление) в бетоне
+              .menu__section 
+                p.menu__section-title Обслуживание
+                ul.menu__section-list
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание структурированных кабельных сетей (СКС)
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание локально вычислительных сетей (ЛВС)
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание волоконно-оптических линий связи (ВОЛС)
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание беспроводных сетей Wi-Fi
+                  li 
+                    a.menu__section-link(href="" title="") Обслуживание систем телефонной связи
+
+
+  include mobile-menu
+
+
+
+

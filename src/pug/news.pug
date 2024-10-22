@@ -1,0 +1,14 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Новости';
+
+block content
+
+  include components/inner/news.pug
+
+
+
+
+append styles
+  +style('index.css')

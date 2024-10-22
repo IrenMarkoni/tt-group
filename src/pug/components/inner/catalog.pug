@@ -1,0 +1,129 @@
+- let breadcrumb = ["Главная", "Каталог оборудования"];
+section.page-top.page-top_grey
+  .container 
+    .page-top__content 
+      +breadcrumbs(breadcrumb)
+      h1 Каталог оборудования
+section.catalog 
+  .container 
+    .catalog__content 
+
+      .filter
+        label.filter__label Категория оборудования
+        .filter__item
+          .filter__chosen 
+            .filter__chosen-icon
+            .filter__chosen-text Всё оборудование
+            .filter__btn
+          .filter__wrapper
+            ul 
+              li.active Всё оборудование
+              li AHD видеокамеры
+              li IP-видеокамеры
+              li Аксессуары и HDD
+              li Видеорегистраторы
+              li Комплекты усиления связи
+              li Турникеты
+              li Шлагбаумы
+      .catalog__wrapper
+        .catalog__items  
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/1.png", "SOWA T120-2")
+            .catalog__item-info
+              div 
+                a.catalog__item-title(href="") SOWA T120-2
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/2.png", "SOWA T120-2")
+            .catalog__item-info 
+              div
+                a.catalog__item-title(href="") Навесной турникет-трипод CARDDEX «STL-02»
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/3.png", "SOWA T120-2")
+            .catalog__item-info 
+              div
+                a.catalog__item-title(href="") Комплект усиления сигнала DS-1800/2100-17C2
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/4.png", "SOWA T120-2")
+            .catalog__item-info 
+              div
+                a.catalog__item-title(href="") Приемопередатчик LLT-10
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/5.png", "SOWA T120-2")
+            .catalog__item-info 
+              div
+                a.catalog__item-title(href="") Механический шлагбаум CARDDEX «MBT», комплект «Стандарт Плюс»
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/6.png", "SOWA T120-2")
+            .catalog__item-info 
+              div
+                a.catalog__item-title(href="") SOWA S221-12
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/1.png", "SOWA T120-2")
+            .catalog__item-info 
+              div
+                a.catalog__item-title(href="") SOWA T120-2
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/2.png", "SOWA T120-2")
+            .catalog__item-info 
+              div
+                a.catalog__item-title(href="") Навесной турникет-трипод CARDDEX «STL-02»
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/3.png", "SOWA T120-2")
+            .catalog__item-info 
+              div
+                a.catalog__item-title(href="") Комплект усиления сигнала DS-1800/2100-17C2
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+          .catalog__item  
+            .catalog__item-img 
+              +img("products/4.png", "SOWA T120-2")
+            .catalog__item-info 
+              div
+                a.catalog__item-title(href="") Приемопередатчик LLT-10
+                .catalog__item-price 2100 ₽
+              a.secondary-btn.openmodal(data-modal="callback") Заказать
+        .pagination 
+          .pagination__item.pagination__item_prev
+          .pagination__item.pagination__item_active 1
+          .pagination__item 2
+          .pagination__item 3
+          .pagination__item 4
+          .pagination__item 5
+          .pagination__item.pagination__item_next
+        .section__bottom  
+
+section.description 
+  .container
+    .description__content 
+      .description__block
+        p К нам обращаются за реализацией комплексных инженерных проектов в сфере построения систем безопасности и автоматики. В состав ООО «ТТ-ГРУПП» входят специалисты с компетенциями и знаниями в различных направлениях, позволяющие вести комплексно реализацию проекта любой сложности. Наша компания обладает необходимыми кадровыми ресурсами и производственно-технической базой для оснащения «под ключ» коммерческих, государственных и частных объектов.
+      .description__block
+        p Мы предлагаем своим клиентам передовые разработки зарубежных и отечественных производителей, которые мы закупаем напрямую. В подготовке технического решения принимают участие проектировщики, технические специалисты, руководители проектов, что позволяет избежать ошибок в дальнейшей работе, подобрать оптимальные материалы и оборудование, основываясь на опыте всех подразделений.
+        p Проектируем, монтируем, обслуживаем, как на территории Тульской области, так и по всей 
+          a(href="") России.
+include ../callback

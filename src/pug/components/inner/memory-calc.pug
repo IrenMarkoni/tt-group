@@ -1,0 +1,64 @@
+- let breadcrumb = ["Главная", "Расчёт места на жёстком диске для камер видеонаблюдения заказать в Туле по выгодной цене от «ТТ-ГРУПП»"];
+section.page-top.page-top_grey
+  .container 
+    .page-top__content
+      +breadcrumbs(breadcrumb)
+      h1 Расчёт места на жёстком диске для камер видеонаблюдения заказать в Туле по выгодной цене от «ТТ-ГРУПП»
+section.calculator 
+  .container 
+    .calculator__wrapper.calculator__wrapper_memory
+      .calculator__item
+        label Кол-во дней
+        .calculator__field
+          .minus
+          input.day(placeholder="1" min="1" type="text")
+          .plus
+      .calculator__item
+        label Кол-во каналов записи
+        .calculator__field
+          .minus
+          input.kol_vo_kanalov(placeholder="1" min="1" type="text")
+          .plus
+      .calculator__item
+        label Кол-во аудиоканалов
+        .calculator__field
+          .minus
+          input.kol_vo_au(placeholder="1" min="1" type="text")
+          .plus
+      .calculator__item
+        label Разрешение камеры
+        .calculator__field.calculator__field_select
+          select.razreshi
+            option(value="3.42") 3 Мп (2048х1536)
+            option(value="2.25") 2 Мп (1920х1080)
+            option(value="1.33") 1.3 Мп (1280х960)
+            option(value="1") 1 Мп (1280х720)
+          .select-btn
+      .calculator__item
+        label Битрейт камеры (Kb/s)
+        .calculator__field.calculator__field_select
+          select.bit
+            option(value="1800") 4096 кб/с
+            option(value="1350") 3072 кб/с
+            option(value="900") 2048 кб/с
+            option(value="453") 1024 кб/с
+          .select-btn
+      .calculator__item
+        label Кол-во записи часов в сутки V
+        .calculator__field.calculator__field_select
+          select.sutki
+            option(value="0.5") 12 часов
+            option(value="1") 24 часа
+            option(value="0.33") По движению (интенсивность 30%)
+          .select-btn
+      .calculator__item.calculator__item_result
+        .calculator__field
+          label Требуемое для записи место
+          span.itog-item
+            span.itog 0.00 
+            | Тб.
++js('main/memory-calc.js')
+
+
+
+include ../callback

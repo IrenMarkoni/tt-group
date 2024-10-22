@@ -1,0 +1,6 @@
+mixin statisticsCard(data)
+  .statistics__item-top 
+    .statistics__item-number=data.number
+    .statistics__item-icon
+      +svg(`${data.icon}`)
+  p.statistics__item-text=data.text

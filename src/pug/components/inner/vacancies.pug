@@ -1,0 +1,56 @@
+- let breadcrumb = ["Главная", "Вакансии"];
+section.page-top.page-top_grey
+  .container 
+    .page-top__content
+      +breadcrumbs(breadcrumb)
+      h1 Вакансии
+section.vacancies 
+  .container
+    .vacancies__content 
+      a.vacancies__item(href="")
+        .vacancies__img 
+          +img("job1.png", "Название вакансии")
+        .vacancies__info 
+          p.vacancies__title Инженер проектировщик
+          span.vacancies__salary от 80 000 руб
+          ul 
+            li организация работ по сбору исходных данных для разработки проектно-сметной документации;
+            li определение объема работ, трудозатрат и сроков реализации проекта;
+            li разработка проектов на всех стадиях: пред проектные проработки, рабочая документация,
+        .arrow
+          span
+          span
+          span
+          span
+      a.vacancies__item(href="")
+        .vacancies__img 
+          +img("job2.png", "Название вакансии")
+        .vacancies__info 
+          p.vacancies__title Монтажник слаботочных систем/электромонтажник
+          span.vacancies__salary от 60 000 руб
+          ul 
+            li организация работ по сбору исходных данных для разработки проектно-сметной документации;
+            li определение объема работ, трудозатрат и сроков реализации проекта;
+            li разработка проектов на всех стадиях: пред проектные проработки, рабочая документация,
+        .arrow
+          span
+          span
+          span
+          span
+      a.vacancies__item(href="")
+        .vacancies__img 
+          +img("job3.png", "Название вакансии")
+        .vacancies__info 
+          p.vacancies__title Инженер по сервисному обслуживанию
+          span.vacancies__salary от 75 000 руб
+          ul 
+            li организация работ по сбору исходных данных для разработки проектно-сметной документации;
+            li определение объема работ, трудозатрат и сроков реализации проекта;
+            li разработка проектов на всех стадиях: пред проектные проработки, рабочая документация,
+        .arrow
+          span
+          span
+          span
+          span
+include ../callback
+

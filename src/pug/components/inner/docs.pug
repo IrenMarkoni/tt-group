@@ -1,0 +1,153 @@
+- let breadcrumb = ["Главная", "Документы"];
+section.page-top.page-top_grey
+  .container 
+    .page-top__content
+      +breadcrumbs(breadcrumb)
+      h1 Документы
+section.docs 
+  .container 
+    .section__top
+    .docs__content 
+      .accordeon
+        .accordeon__item
+          .accordeon__head.open Документы компании
+            .accordeon__btn
+              span
+              span
+          .accordeon__body(style="display: block")
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Договор
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Карточка предприятия
+        .accordeon__item
+          .accordeon__head Лицензии и допуски
+            .accordeon__btn
+              span
+              span
+          .accordeon__body
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Выписка из строительного СРО
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Выписка из проектного СРО
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Лицензия МЧС
+        .accordeon__item
+          .accordeon__head Повышение квалификации
+            .accordeon__btn
+              span
+              span
+          .accordeon__body
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Повышение квалификации 1
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Повышение квалификации 2
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Повышение квалификации 3
+        .accordeon__item
+          .accordeon__head Разрешения и сертификации
+            .accordeon__btn
+              span
+              span
+          .accordeon__body
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Разрешения и сертификации 1
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Разрешения и сертификации 2
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Разрешения и сертификации 3
+        .accordeon__item
+          .accordeon__head Законы
+            .accordeon__btn
+              span
+              span
+          .accordeon__body
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Закон 1
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Закон 2
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Закон 3
+        .accordeon__item
+          .accordeon__head Государственные стандарты (ГОСТ)
+            .accordeon__btn
+              span
+              span
+          .accordeon__body
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | ГОСТ 1
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | ГОСТ 2
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | ГОСТ 3
+        .accordeon__item
+          .accordeon__head Приказы
+            .accordeon__btn
+              span
+              span
+          .accordeon__body
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Приказ МЧС РФ от 20 июня 2003 г. N 323 "Об утверждении норм пожарной безопасности "Проектирование систем оповещения людей о пожаре в зданиях и сооружениях"
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Приказ МЧС России от 20 июня 2003 г. № 323 "Об утверждении норм пожарной безопасности "Проектирование систем оповещения людей о пожаре в зданиях и сооружениях" (НПБ 104-03)"
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Приказ Минтранса РФ от 31 июля 2012 г. № 285 "Об утверждении требований к средствам навигации, функционирующим с использованием навигационных сигналов системы ГЛОНАСС или ГЛОНАСС/GPS и предназначенным для обязательного оснащения транспортных средств катег
+        .accordeon__item
+          .accordeon__head Руководящие документы/Своды правил
+            .accordeon__btn
+              span
+              span
+          .accordeon__body
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Документ 1
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Документ 2
+            .accordeon__body-item
+              a.docs__link(href="")
+                +svg("pdf")
+                | Документ 3
+
+include ../callback

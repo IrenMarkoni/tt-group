@@ -1,0 +1,24 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'ТТ-ГРУПП';
+
+block content
+
+  include components/index/hero.pug
+  include components/index/services.pug
+  include components/index/cooperation.pug
+  include components/index/work.pug
+  include components/index/description.pug
+  include components/index/benefits.pug
+  include components/index/portfolio.pug
+  include components/index/catalog.pug
+  include components/index/news.pug
+  include components/index/thanks.pug
+  include components/index/clients.pug
+  include components/callback.pug
+
+
+
+append styles
+  +style('index.css')

@@ -1,0 +1,50 @@
+- let breadcrumb = ["Главная", "Контакты"];
+section.page-top.page-top_grey
+  .container 
+    .page-top__content
+      +breadcrumbs(breadcrumb)
+      h1 Контакты
+section.contacts 
+  .container 
+    .contacts__content 
+      .contacts__item.contacts__item_flex 
+        div 
+          label Телефон:
+          a(href="tel:88001014515") 8 800 101 45 15
+        div 
+          label E-mail для связи:
+          a(href="mailto: info@t-t.group") info@t-t.group
+      .contacts__item.contacts__item_flex 
+        div 
+          label Бухгалтерия:
+          a(href="mailto: buh@t-t.group") buh@t-t.group
+        div 
+          label Соцсети
+          .socials
+            a.socials__item.socials__item_tg(href="")
+            a.socials__item.socials__item_vk(href="")
+      .contacts__item
+        .contacts__item-top
+          label Офис
+          a.contacts__link(href="") Схема проезда
+          a.contacts__link(href="") Показать на карте
+          p 300002, г. Тула, Демидовская улица, 61Г
+      .contacts__item 
+        label Мы работаем в ЭДО. Ссылка на идентификатор «Диадок»: 
+        p 2BM-9701089540-770101001-201711110920522034291
+      .contacts__item 
+        label
+          a(href="").docs__link 
+            +svg("pdf") 
+            | Скачать карточку предприятия
+      .contacts__item 
+        label
+          a(href="").docs__link 
+            +svg("pdf") 
+            |Скачать договор
+    .section__bottom
+      span 
+      span
+section.map 
+  script(type='text/javascript' charset='utf-8' async='' src='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A56b479398c98f7c9c99f228c990be18460935a7f8656451c4a2719843c8cb207&width=100%25&height=480&lang=ru_RU&scroll=true')
+include ../callback

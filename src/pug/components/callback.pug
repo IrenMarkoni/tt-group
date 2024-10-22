@@ -1,0 +1,23 @@
+section.callback 
+  .container
+    .section__top
+      span 
+      span 
+    .callback__content
+      span 
+      span 
+      span 
+      span 
+      .callback__block 
+        h2 Оставьте заявку и&nbsp;получите консультацию специалиста
+        p или свяжитесь с нами удобным способом
+        a.phone-link(href="tel:88001014515") 8 800 101 45 15
+        a.email-link(href="mailto: info@t-t.group" target="_blank") info@t-t.group
+      .callback__block 
+        form.callback-form
+          input.custom-input(type="text" placeholder="Имя" name="name" required)
+          input.custom-input.validate-field(type="text" placeholder="Телефон" name="phone" data-tel-input required)
+          button.primary-btn(type="submit") Отправить
+          .agreement При нажатии кнопки "Отправить" Вы соглашаетесь 
+            a(href="") с политикой конфиденциальности и обработки персональных данных
+    .section__bottom
